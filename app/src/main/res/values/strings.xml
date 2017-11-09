@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="WelcomeText">Welcome To GameTech</string>
+    <string name="PlayerSelectionLabel">How Many Players</string>
+    <string name="OnePlayer">One</string>
+    <string name="TwoPlayer">Two</string>
+    <string name="GameSelectionLabel">Select Game:</string>
+    <string name="StartButton">START</string>
+    <string-array name="games_array">
+        <item>Tic Tac Toe</item>
+    </string-array>
+</resources>
