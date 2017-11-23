@@ -28,7 +28,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_tic_tac_toe);
 
         PlayerLabelId = (TextView) findViewById(R.id.PlayerLabelId);
-        UpperLeftButtonId = (Button) findViewById(R.id.UpperRightButtonId);
+        UpperLeftButtonId = (Button) findViewById(R.id.UpperLeftButtonId);
         UpperCenterButtonId = (Button) findViewById(R.id.UpperCenterButtonId);
         UpperRightButtonId = (Button) findViewById(R.id.UpperRightButtonId);
         MiddleLeftButtonId = (Button) findViewById(R.id.MiddleLeftButtonId);
@@ -53,6 +53,9 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onClick(View v)
     {
+        String PlayerOne = "Player 1 turn";
+        String PlayerTwo = "Player 2 turn";
+
         if(isPlayerOne)
         {
             switch (v.getId())
@@ -61,7 +64,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperRightButtonId.setText("X");
                     UpperRightButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 2 turn");
+                    PlayerLabelId.setText(PlayerTwo);
                     isPlayerOne = false;
                     break;
                 }
@@ -69,7 +72,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperCenterButtonId.setText("X");
                     UpperCenterButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 2 turn");
+                    PlayerLabelId.setText(PlayerTwo);
                     isPlayerOne = false;
                     break;
                 }
@@ -77,7 +80,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperLeftButtonId.setText("X");
                     UpperLeftButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 2 turn");
+                    PlayerLabelId.setText(PlayerTwo);
                     isPlayerOne = false;
                     break;
                 }
@@ -85,7 +88,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     MiddleLeftButtonId.setText("X");
                     MiddleLeftButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 2 turn");
+                    PlayerLabelId.setText(PlayerTwo);
                     isPlayerOne = false;
                     break;
                 }
@@ -93,7 +96,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     CenterButtonId.setText("X");
                     CenterButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 2 turn");
+                    PlayerLabelId.setText(PlayerTwo);
                     isPlayerOne = false;
                     break;
                 }
@@ -101,7 +104,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     MiddleRightButtonId.setText("X");
                     MiddleRightButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 2 turn");
+                    PlayerLabelId.setText(PlayerTwo);
                     isPlayerOne = false;
                     break;
                 }
@@ -109,7 +112,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     LowerCenterButtonId.setText("X");
                     LowerCenterButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 2 turn");
+                    PlayerLabelId.setText(PlayerTwo);
                     isPlayerOne = false;
                     break;
                 }
@@ -117,7 +120,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     LowerLeftButtonId.setText("X");
                     LowerLeftButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 2 turn");
+                    PlayerLabelId.setText(PlayerTwo);
                     isPlayerOne = false;
                     break;
                 }
@@ -125,7 +128,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     LowerRightButtonId.setText("X");
                     LowerRightButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 2 turn");
+                    PlayerLabelId.setText(PlayerTwo);
                     isPlayerOne = false;
                     break;
                 }
@@ -139,7 +142,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperRightButtonId.setText("O");
                     UpperRightButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 1 turn");
+                    PlayerLabelId.setText(PlayerOne);
                     isPlayerOne = true;
                     break;
                 }
@@ -147,7 +150,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperRightButtonId.setText("O");
                     UpperCenterButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 1 turn");
+                    PlayerLabelId.setText(PlayerOne);
                     isPlayerOne = true;
                     break;
                 }
@@ -155,7 +158,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperRightButtonId.setText("O");
                     UpperLeftButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 1 turn");
+                    PlayerLabelId.setText(PlayerOne);
                     isPlayerOne = true;
                     break;
                 }
@@ -163,7 +166,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperRightButtonId.setText("O");
                     MiddleLeftButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 1 turn");
+                    PlayerLabelId.setText(PlayerOne);
                     isPlayerOne = true;
                     break;
                 }
@@ -171,7 +174,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperRightButtonId.setText("O");
                     CenterButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 1 turn");
+                    PlayerLabelId.setText(PlayerOne);
                     isPlayerOne = true;
                     break;
                 }
@@ -179,7 +182,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperRightButtonId.setText("O");
                     MiddleRightButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 1 turn");
+                    PlayerLabelId.setText(PlayerOne);
                     isPlayerOne = true;
                     break;
                 }
@@ -187,7 +190,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperRightButtonId.setText("O");
                     LowerCenterButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 1 turn");
+                    PlayerLabelId.setText(PlayerOne);
                     isPlayerOne = true;
                     break;
                 }
@@ -195,7 +198,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperRightButtonId.setText("O");
                     LowerLeftButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 1 turn");
+                    PlayerLabelId.setText(PlayerOne);
                     isPlayerOne = true;
                     break;
                 }
@@ -203,7 +206,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 {
                     UpperRightButtonId.setText("O");
                     LowerRightButtonId.setClickable(false);
-                    PlayerLabelId.setText("Player 1 turn");
+                    PlayerLabelId.setText(PlayerOne);
                     isPlayerOne = true;
                     break;
                 }
