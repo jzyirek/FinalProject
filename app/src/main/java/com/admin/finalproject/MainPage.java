@@ -1,6 +1,7 @@
 package com.admin.finalproject;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -57,8 +58,22 @@ public class MainPage extends AppCompatActivity implements OnClickListener
     }
 
     @Override
-    public void onClick(View v)
+    public void onClick(View view)
     {
-
+        if (view.getId() == R.id.StartButtonId)
+        {
+            startGame();
+        }
     }
+private void startGame()
+    {
+        Intent intent;
+
+        if(GamesSpinnerId.getSelectedItemPosition() == 0)
+        {
+            intent = new Intent(this, TicTacToe.class);
+            startActivity(intent);
+        }
+    }
+
 }

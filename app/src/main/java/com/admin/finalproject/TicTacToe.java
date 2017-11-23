@@ -3,7 +3,8 @@ package com.admin.finalproject;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class TicTacToe extends AppCompatActivity {
+public class TicTacToe extends AppCompatActivity
+{
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

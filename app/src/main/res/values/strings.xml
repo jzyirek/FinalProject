@@ -6,6 +6,16 @@
     <string name="TwoPlayer">Two</string>
     <string name="GameSelectionLabel">Select Game:</string>
     <string name="StartButton">START</string>
+    <string name="UpperRightButton">\?</string>
+    <string name="UpperCenterButton">\?</string>
+    <string name="UpperLeftButton">\?</string>
+    <string name="MiddleRightButton">\?</string>
+    <string name="CenterButton">\?</string>
+    <string name="MiddleLeftButtonId">\?</string>
+    <string name="LowerLeftButton">\?</string>
+    <string name="LowerCenterButton">\?</string>
+    <string name="LowerRightButton">\?</string>
+    <string name="PlayerLabel">Player</string>
     <string-array name="games_array">
         <item>Tic Tac Toe</item>
     </string-array>
