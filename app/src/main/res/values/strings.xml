@@ -15,7 +15,7 @@
     <string name="LowerLeftButton">\?</string>
     <string name="LowerCenterButton">\?</string>
     <string name="LowerRightButton">\?</string>
-    <string name="PlayerLabel">Player</string>
+    <string name="PlayerLabel">Player 1 Turn</string>
     <string-array name="games_array">
         <item>Tic Tac Toe</item>
     </string-array>
