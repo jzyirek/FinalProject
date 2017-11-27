@@ -2,6 +2,7 @@ package com.admin.finalproject;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -60,6 +61,8 @@ public class MainPage extends AppCompatActivity implements OnClickListener
     @Override
     public void onClick(View view)
     {
+        final MediaPlayer placeTile = MediaPlayer.create(this, R.raw.beep);
+        placeTile.start();
         if (view.getId() == R.id.StartButtonId)
         {
             startGame();
