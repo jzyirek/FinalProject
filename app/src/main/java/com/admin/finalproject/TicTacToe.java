@@ -271,7 +271,6 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
         if(isCurrentPlayerOne)
         {
             try {
-                //set time in mili
                 Thread.sleep(500);
 
             }catch (Exception e){
@@ -331,7 +330,6 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
         else
         {
             try {
-                //set time in mili
                 Thread.sleep(500);
 
             }catch (Exception e){
