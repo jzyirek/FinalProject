@@ -46,9 +46,6 @@ public class MainPage extends AppCompatActivity implements OnClickListener
 
     private void Init()
     {
-        OnePlayerRadioId.setClickable(true);
-        TwoPlayerRadioId.setChecked(true);
-
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.games_array, android.R.layout.simple_spinner_item);

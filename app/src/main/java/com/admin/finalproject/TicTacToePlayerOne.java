@@ -468,6 +468,10 @@ public class TicTacToePlayerOne extends AppCompatActivity implements View.OnClic
                 victoryFlash(UpperLeftButtonId,CenterButtonId,LowerRightButtonId);
                 victory.start();
             }
+            else if(playerOneCount + playerTwoCount >= 9)
+            {
+                PlayerLabelId.setText("Tie Game");
+            }
         }
         else
         {
@@ -526,6 +530,10 @@ public class TicTacToePlayerOne extends AppCompatActivity implements View.OnClic
                 PlayerLabelId.setText(playerTwoVictory);
                 victoryFlash(UpperLeftButtonId,CenterButtonId,LowerRightButtonId);
                 victory.start();
+            }
+            else if(playerOneCount + playerTwoCount >= 9)
+            {
+                PlayerLabelId.setText("Tie Game");
             }
         }
     }
