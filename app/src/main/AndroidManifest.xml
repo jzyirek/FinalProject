@@ -22,6 +22,11 @@
             android:screenOrientation="portrait"
             android:parentActivityName=".MainPage">
         </activity>
+        <activity
+            android:name=".TicTacToePlayerOne"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainPage">
+        </activity>
     </application>
 
 </manifest>

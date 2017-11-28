@@ -46,7 +46,7 @@ public class MainPage extends AppCompatActivity implements OnClickListener
 
     private void Init()
     {
-        OnePlayerRadioId.setClickable(false);
+        OnePlayerRadioId.setClickable(true);
         TwoPlayerRadioId.setChecked(true);
 
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -74,8 +74,16 @@ private void startGame()
 
         if(GamesSpinnerId.getSelectedItemPosition() == 0)
         {
-            intent = new Intent(this, TicTacToe.class);
-            startActivity(intent);
+            if(OnePlayerRadioId.isChecked())
+            {
+                intent = new Intent(this, TicTacToePlayerOne.class);
+                startActivity(intent);
+            }
+            else
+            {
+                intent = new Intent(this, TicTacToe.class);
+                startActivity(intent);
+            }
         }
     }
 
