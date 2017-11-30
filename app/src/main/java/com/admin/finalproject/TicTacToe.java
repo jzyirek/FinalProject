@@ -282,36 +282,42 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 PlayerLabelId.setText(playerOneVictory);
                 victoryFlash(UpperRightButtonId,UpperLeftButtonId,UpperCenterButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(MiddleLeftButtonId.getText().equals("X") && CenterButtonId.getText().equals("X") && MiddleRightButtonId.getText().equals("X"))
             {
                 PlayerLabelId.setText(playerOneVictory);
                 victoryFlash(MiddleLeftButtonId,CenterButtonId,MiddleRightButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(LowerCenterButtonId.getText().equals("X") && LowerLeftButtonId.getText().equals("X") && LowerRightButtonId.getText().equals("X"))
             {
                 PlayerLabelId.setText(playerOneVictory);
                 victoryFlash(LowerCenterButtonId,LowerLeftButtonId,LowerRightButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(UpperRightButtonId.getText().equals("X") && MiddleRightButtonId.getText().equals("X") && LowerRightButtonId.getText().equals("X"))
             {
                 PlayerLabelId.setText(playerOneVictory);
                 victoryFlash(UpperRightButtonId,MiddleRightButtonId,LowerRightButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(UpperCenterButtonId.getText().equals("X") && CenterButtonId.getText().equals("X") && LowerCenterButtonId.getText().equals("X"))
             {
                 PlayerLabelId.setText(playerOneVictory);
                 victoryFlash(UpperCenterButtonId,CenterButtonId,LowerCenterButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(UpperLeftButtonId.getText().equals("X") && MiddleLeftButtonId.getText().equals("X") && LowerLeftButtonId.getText().equals("X"))
             {
                 PlayerLabelId.setText(playerOneVictory);
                 victoryFlash(UpperLeftButtonId,MiddleLeftButtonId,LowerLeftButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
 
             else if(UpperRightButtonId.getText().equals("X") && CenterButtonId.getText().equals("X") && LowerLeftButtonId.getText().equals("X"))
@@ -319,12 +325,14 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 PlayerLabelId.setText(playerOneVictory);
                 victoryFlash(UpperRightButtonId,CenterButtonId,LowerLeftButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(UpperLeftButtonId.getText().equals("X") && CenterButtonId.getText().equals("X") && LowerRightButtonId.getText().equals("X"))
             {
                 PlayerLabelId.setText(playerOneVictory);
                 victoryFlash(UpperLeftButtonId,CenterButtonId,LowerRightButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
         }
         else
@@ -341,36 +349,42 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 PlayerLabelId.setText(playerTwoVictory);
                 victoryFlash(UpperRightButtonId,UpperLeftButtonId,UpperCenterButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(MiddleLeftButtonId.getText().equals("O") && CenterButtonId.getText().equals("O") && MiddleRightButtonId.getText().equals("O"))
             {
                 PlayerLabelId.setText(playerTwoVictory);
                 victoryFlash(MiddleLeftButtonId,CenterButtonId,MiddleRightButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(LowerCenterButtonId.getText().equals("O") && LowerLeftButtonId.getText().equals("O") && LowerRightButtonId.getText().equals("O"))
             {
                 PlayerLabelId.setText(playerTwoVictory);
                 victoryFlash(LowerCenterButtonId,LowerLeftButtonId,LowerRightButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(UpperRightButtonId.getText().equals("O") && MiddleRightButtonId.getText().equals("O") && LowerRightButtonId.getText().equals("O"))
             {
                 PlayerLabelId.setText(playerTwoVictory);
                 victoryFlash(UpperRightButtonId,MiddleRightButtonId,LowerRightButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(UpperCenterButtonId.getText().equals("O") && CenterButtonId.getText().equals("O") && LowerCenterButtonId.getText().equals("O"))
             {
                 PlayerLabelId.setText(playerTwoVictory);
                 victoryFlash(UpperCenterButtonId,CenterButtonId,LowerCenterButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(UpperLeftButtonId.getText().equals("O") && MiddleLeftButtonId.getText().equals("O") && LowerLeftButtonId.getText().equals("O"))
             {
                 PlayerLabelId.setText(playerTwoVictory);
                 victoryFlash(UpperLeftButtonId,MiddleLeftButtonId,LowerLeftButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
 
             else if(UpperRightButtonId.getText().equals("O") && CenterButtonId.getText().equals("O") && LowerLeftButtonId.getText().equals("O"))
@@ -378,14 +392,29 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
                 PlayerLabelId.setText(playerTwoVictory);
                 victoryFlash(UpperRightButtonId,CenterButtonId,LowerLeftButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
             else if(UpperLeftButtonId.getText().equals("O") && CenterButtonId.getText().equals("O") && LowerRightButtonId.getText().equals("O"))
             {
                 PlayerLabelId.setText(playerTwoVictory);
                 victoryFlash(UpperLeftButtonId,CenterButtonId,LowerRightButtonId);
                 victory.start();
+                disableUnusedBoxes();
             }
         }
+    }
+
+    private void disableUnusedBoxes()
+    {
+        UpperLeftButtonId.setClickable(false);
+        UpperCenterButtonId.setClickable(false);
+        UpperRightButtonId.setClickable(false);
+        MiddleLeftButtonId.setClickable(false);
+        CenterButtonId.setClickable(false);
+        MiddleRightButtonId.setClickable(false);
+        LowerLeftButtonId.setClickable(false);
+        LowerRightButtonId.setClickable(false);
+        LowerCenterButtonId.setClickable(false);
     }
 
     private void victoryFlash(Button first, Button second, Button third)

@@ -11,12 +11,14 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 public class MainPage extends AppCompatActivity implements OnClickListener
 {
     //buttons
     private Button StartButtonId;
+    private Boolean isSinglePlayer;
 
     //text views
 
@@ -24,6 +26,7 @@ public class MainPage extends AppCompatActivity implements OnClickListener
     private Spinner GamesSpinnerId;
 
     //radio buttons
+    private RadioGroup playerSelectorsId;
     private RadioButton OnePlayerRadioId;
     private RadioButton TwoPlayerRadioId;
 
@@ -35,6 +38,7 @@ public class MainPage extends AppCompatActivity implements OnClickListener
 
         StartButtonId = (Button) findViewById(R.id.StartButtonId);
 
+        playerSelectorsId = (RadioGroup) findViewById(R.id.playerSelectorsId) ;
         OnePlayerRadioId = (RadioButton) findViewById(R.id.OnePlayerRadioId);
         TwoPlayerRadioId = (RadioButton) findViewById(R.id.TwoPlayerRadioId);
 
@@ -53,6 +57,25 @@ public class MainPage extends AppCompatActivity implements OnClickListener
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         GamesSpinnerId.setAdapter(adapter);
+        OnePlayerRadioId.setChecked(true);
+
+        playerSelectorsId.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i)
+            {
+                if (radioGroup.getCheckedRadioButtonId() == OnePlayerRadioId.getId())
+                {
+                    isSinglePlayer = true;
+                    TwoPlayerRadioId.setChecked(false);
+
+                } else if (radioGroup.getCheckedRadioButtonId() == TwoPlayerRadioId.getId())
+                {
+                   isSinglePlayer = false;
+                    OnePlayerRadioId.setChecked(false);
+                }
+            }
+        });
     }
 
     @Override
@@ -71,7 +94,7 @@ private void startGame()
 
         if(GamesSpinnerId.getSelectedItemPosition() == 0)
         {
-            if(OnePlayerRadioId.isChecked())
+            if(isSinglePlayer)
             {
                 intent = new Intent(this, TicTacToePlayerOne.class);
                 startActivity(intent);
