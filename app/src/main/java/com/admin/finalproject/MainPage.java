@@ -87,7 +87,8 @@ public class MainPage extends AppCompatActivity implements OnClickListener
             startGame();
         }
     }
-private void startGame()
+
+    private void startGame()
     {
         Intent intent;
 
