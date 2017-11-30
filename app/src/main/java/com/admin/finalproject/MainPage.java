@@ -57,7 +57,6 @@ public class MainPage extends AppCompatActivity implements OnClickListener
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         GamesSpinnerId.setAdapter(adapter);
-        OnePlayerRadioId.setChecked(true);
 
         playerSelectorsId.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {

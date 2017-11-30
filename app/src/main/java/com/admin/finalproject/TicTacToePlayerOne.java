@@ -167,15 +167,6 @@ public class TicTacToePlayerOne extends AppCompatActivity implements View.OnClic
 
         if(!isPlayerOne)
         {
-            try {
-                Thread.sleep(3500);
-
-            }catch (Exception e)
-            {
-                e.printStackTrace();
-                PlayerLabelId.setText(e.toString());
-            }
-
             if(playerTwoCount < 1 && CenterButtonId.isClickable())
             {
                 CenterButtonId.setText("O");
