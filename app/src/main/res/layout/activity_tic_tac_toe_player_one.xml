@@ -20,11 +20,11 @@
         android:text="@string/UpperLeftButton"
         android:textSize="72sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintHorizontal_bias="0.969"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintVertical_bias="0.343" />
 
     <Button
         android:id="@+id/MiddleRightButtonId"
@@ -39,10 +39,10 @@
         app:layout_constraintLeft_toLeftOf="@+id/BackgroundBoardViewId"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintHorizontal_bias="0.968"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.653" />
 
     <Button
         android:id="@+id/CenterButtonId"
@@ -57,10 +57,10 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.653" />
 
     <Button
         android:id="@+id/MiddleLeftButtonId"
@@ -73,12 +73,12 @@
         app:layout_constraintRight_toRightOf="@+id/BackgroundBoardViewId"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.653" />
 
     <Button
         android:id="@+id/LowerLeftButtonId"
@@ -96,7 +96,7 @@
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.978" />
+        app:layout_constraintVertical_bias="0.951" />
 
     <Button
         android:id="@+id/LowerCenterButtonId"
@@ -111,10 +111,10 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.979" />
+        app:layout_constraintVertical_bias="0.954" />
 
     <Button
         android:id="@+id/LowerRightButtonId"
@@ -127,26 +127,27 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintHorizontal_bias="0.969"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.979" />
+        app:layout_constraintVertical_bias="0.954" />
 
     <ImageView
         android:id="@+id/BackgroundBoardViewId"
-        android:layout_width="379dp"
-        android:layout_height="368dp"
+        android:layout_width="354dp"
+        android:layout_height="350dp"
         app:srcCompat="@drawable/tic_tac_toe_board"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteY="135dp" />
+        app:layout_constraintVertical_bias="0.875"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/UpperLeftButtonId"
@@ -164,7 +165,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintVertical_bias="0.343" />
 
     <Button
         android:id="@+id/UpperCenterButtonId"
@@ -181,8 +182,8 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintVertical_bias="0.343" />
 
     <TextView
         android:id="@+id/PlayerLabelId"

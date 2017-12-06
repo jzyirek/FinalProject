@@ -12,19 +12,19 @@
         android:id="@+id/UpperRightButtonId"
         android:layout_width="105dp"
         android:layout_height="102dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="257dp"
+        android:layout_marginLeft="238dp"
         android:background="@android:color/background_light"
         android:text="@string/UpperLeftButton"
         android:textSize="72sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintTop_toTopOf="@+id/BackgroundBoardViewId"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/BackgroundBoardViewId"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <Button
         android:id="@+id/MiddleRightButtonId"
@@ -33,16 +33,16 @@
         android:background="@android:color/background_light"
         android:text="@string/MiddleRightButton"
         android:textSize="72sp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/BackgroundBoardViewId"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintHorizontal_bias="0.899"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BackgroundBoardViewId"
+        android:layout_marginTop="126dp"
+        app:layout_constraintBottom_toBottomOf="@+id/BackgroundBoardViewId"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="226dp"
+        app:layout_constraintLeft_toLeftOf="@+id/BackgroundBoardViewId"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/BackgroundBoardViewId"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <Button
         android:id="@+id/CenterButtonId"
@@ -51,16 +51,16 @@
         android:background="@android:color/background_light"
         android:text="@string/CenterButton"
         android:textSize="72sp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BackgroundBoardViewId"
+        android:layout_marginTop="126dp"
+        android:layout_marginRight="123dp"
+        app:layout_constraintRight_toRightOf="@+id/BackgroundBoardViewId"
+        app:layout_constraintBottom_toBottomOf="@+id/BackgroundBoardViewId"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/BackgroundBoardViewId"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <Button
         android:id="@+id/MiddleLeftButtonId"
@@ -69,16 +69,16 @@
         android:background="@android:color/background_light"
         android:text="@string/MiddleLeftButtonId"
         android:textSize="72sp"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="245dp"
         app:layout_constraintRight_toRightOf="@+id/BackgroundBoardViewId"
+        app:layout_constraintTop_toTopOf="@+id/BackgroundBoardViewId"
+        android:layout_marginTop="120dp"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/BackgroundBoardViewId"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.046" />
 
     <Button
         android:id="@+id/LowerLeftButtonId"
@@ -87,16 +87,16 @@
         android:background="@android:color/background_light"
         android:text="@string/LowerLeftButton"
         android:textSize="72sp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="27dp"
-        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.978" />
+        app:layout_constraintTop_toTopOf="@+id/BackgroundBoardViewId"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.968"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/BackgroundBoardViewId"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <Button
         android:id="@+id/LowerCenterButtonId"
@@ -105,16 +105,16 @@
         android:background="@android:color/background_light"
         android:text="@string/LowerCenterButton"
         android:textSize="72sp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.979" />
+        android:layout_marginLeft="132dp"
+        app:layout_constraintLeft_toLeftOf="@+id/BackgroundBoardViewId"
+        app:layout_constraintTop_toTopOf="@+id/BackgroundBoardViewId"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.968"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/MiddleRightButtonId"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <Button
         android:id="@+id/LowerRightButtonId"
@@ -123,30 +123,32 @@
         android:background="@android:color/background_light"
         android:text="@string/LowerRightButton"
         android:textSize="72sp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.979" />
+        android:layout_marginLeft="217dp"
+        app:layout_constraintLeft_toLeftOf="@+id/BackgroundBoardViewId"
+        app:layout_constraintTop_toTopOf="@+id/BackgroundBoardViewId"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.968"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/BackgroundBoardViewId"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <ImageView
         android:id="@+id/BackgroundBoardViewId"
-        android:layout_width="379dp"
-        android:layout_height="368dp"
+        android:layout_width="360dp"
+        android:layout_height="359dp"
         app:srcCompat="@drawable/tic_tac_toe_board"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteY="135dp" />
+        app:layout_constraintVertical_bias="0.941"
+        android:layout_marginRight="1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <Button
         android:id="@+id/UpperLeftButtonId"
@@ -157,14 +159,14 @@
         android:textSize="72sp"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BackgroundBoardViewId"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/BackgroundBoardViewId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/BackgroundBoardViewId"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintVertical_bias="0.004" />
 
     <Button
         android:id="@+id/UpperCenterButtonId"
@@ -173,16 +175,16 @@
         android:background="@android:color/background_light"
         android:text="@string/UpperCenterButton"
         android:textSize="72sp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BackgroundBoardViewId"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="113dp"
+        app:layout_constraintRight_toRightOf="@+id/BackgroundBoardViewId"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
-        app:layout_constraintVertical_bias="0.46" />
+        app:layout_constraintLeft_toLeftOf="@+id/MiddleLeftButtonId"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintBottom_toBottomOf="@+id/BackgroundBoardViewId"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/PlayerLabelId"
